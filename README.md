@@ -33,12 +33,16 @@ Navigate to the `experiments/` folder and use the run file `run.sh` to run the e
 ```
 % line 7. This can be set as 'sgd' or 'adam', which is the optimizer for training the model.
 opt=$1
+
 % line 8. This is the learning rate. In our paper, we search over 1e-2 1e-3 5e-4 1e-4.
 lr=$2
+
 % line 9. This is the number of algorithm steps (iterations) that is used in the reasoning module.
 k=$3
+
 % line 10. This is the hidden dimension of the MLP in the neural module.
 eig_hidden_dims=$4
+
 % line 11. This is the random seed that we use to provide multiple independent instantiations of the experiments.
 seed_train=$5
 ```
